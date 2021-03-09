@@ -54,9 +54,11 @@ If you already know your system is compatible and capable of running CUDA you ca
 ---
 # General Comands
 
-For more in depth knowledge on the commands avaiable i analised the code, i'll try to explain in short what each command does and give example commands to run.
-
 ## Detection
+
+Commands avaiable on detect.py
+
+
 
 ## Testing
 
