@@ -64,4 +64,9 @@ Commands avaiable on detect.py:
 ## Testing
 
 ## Training
+
+Commands avaiable on train.py:
+
+![alt text](https://github.com/Duarte-Nunes/Yolo_Pytorch/blob/main/images/train_commands.png "Detect Commands")
+
     
