@@ -1,4 +1,4 @@
-# Yolo_Pytorch
+# Pytorch-YoloV4-Guide
 A Beginners Guide on using the Pytorch Implementation of YoloV4
 
    My experiments with YoloV4 where done on a MSI Laptop GP75 Leopard 9SE. It contains an NVIDIA Geforce RTX 2060 graphics card with 6 Gb of memory.
