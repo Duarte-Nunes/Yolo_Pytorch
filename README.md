@@ -35,7 +35,7 @@ If you already know your system is compatible and capable of running CUDA you ca
 # Instalation
 1. Dowload the repository.
 
-    `https://github.com/Duarte-Nunes/Yolo_Pytorch.git`
+    `https://github.com/Duarte-Nunes/Pytorch-YoloV4-Guide.git`
     
 2. Install the Requirements.
 
