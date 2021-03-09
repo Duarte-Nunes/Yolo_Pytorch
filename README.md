@@ -21,11 +21,11 @@ It is required you install CUDA and CUDnn before going through the instalation s
 
 The instalation process is well descirbed in the NVIDIA website.
 
-CUDA Instalation guide: https://docs.nvidia.com/cuda/index.html
++ CUDA Instalation guide: https://docs.nvidia.com/cuda/index.html
 
 If you already know your system is compatible and capable of running CUDA you can just use the download link and install.
 
-CUDA download: https://developer.nvidia.com/cuda-downloads
++ CUDA download: https://developer.nvidia.com/cuda-downloads
 
 ---
 # Instalation
