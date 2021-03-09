@@ -56,8 +56,9 @@ If you already know your system is compatible and capable of running CUDA you ca
 
 ## Detection
 
-Commands avaiable on detect.py
+Commands avaiable on detect.py:
 
+![alt text](https://github.com/Duarte-Nunes/Yolo_Pytorch/blob/main/images/detect_commands.png "Detect Commands")
 
 
 ## Testing
