@@ -21,5 +21,6 @@ A Beginners Guide on using the Pytorch Implementation of YoloV4
     
     `pip install -r requirements.txt`
     
-4. Make sure Pytorch was compiled with CUDA enabled
-
+4. Make sure Pytorch is compiled with CUDA enabled
+    Go to: https://pytorch.org/
+    Run the command based on your system specifications
