@@ -17,7 +17,7 @@ A Beginners Guide on using the Pytorch Implementation of YoloV4
 
 ---
 # Requirements
-It is required you install CUDA and CUDnn before going through the instalation steps.
+It is required you install CUDA and cuDNN before going through the instalation steps.
 
 The instalation process is well descirbed in the NVIDIA website.
 
@@ -26,6 +26,8 @@ The instalation process is well descirbed in the NVIDIA website.
 If you already know your system is compatible and capable of running CUDA you can just use the download link and install.
 
 + CUDA download: https://developer.nvidia.com/cuda-downloads
+
++ cuDNN download: https://developer.nvidia.com/cudnn
 
 ---
 # Instalation
