@@ -35,7 +35,7 @@ If you already know your system is compatible and capable of running CUDA you ca
 # Instalation
 1. Dowload the repository.
 
-    `https://github.com/Duarte-Nunes/Pytorch-YoloV4-Guide.git`
+    `git clone https://github.com/Duarte-Nunes/Pytorch-YoloV4-Guide.git`
     
 2. Install the Requirements.
 
@@ -50,6 +50,14 @@ If you already know your system is compatible and capable of running CUDA you ca
     Run the command based on your system specifications
     
     ![alt text](https://github.com/Duarte-Nunes/Yolo_Pytorch/blob/main/images/pytorch_website.png "PyTorch Website")
+    
+4. Install Mish CUDA in order to use mish activation functions (for example in yolo-csp):
+
+   `git clone https://github.com/JunnYu/mish-cuda`
+   
+   `cd mish-cuda`
+    
+    `python setup.py build install`
     
 ---
 # General Comands
