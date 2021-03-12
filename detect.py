@@ -10,14 +10,12 @@ import torch
 import torch.backends.cudnn as cudnn
 from numpy import random
 
-from models.experimental import attempt_load
 from utils.datasets import LoadStreams, LoadImages
 from utils.general import (
     check_img_size, non_max_suppression, apply_classifier, scale_coords, xyxy2xywh, plot_one_box, strip_optimizer)
 from utils.torch_utils import select_device, load_classifier, time_synchronized
 
 from models.models import *
-from models.experimental import *
 from utils.datasets import *
 from utils.general import *
 
@@ -45,18 +43,9 @@ def detect(save_img=False):
         model.load_state_dict(torch.load(weights[0], map_location=device)['model'])
     except:
         load_darknet_weights(model, weights[0])
-    #model = attempt_load(weights, map_location=device)  # load FP32 model
-    #imgsz = check_img_size(imgsz, s=model.stride.max())  # check img_size
     model.to(device).eval()
     if half:
         model.half()  # to FP16
-
-    # Second-stage classifier
-    classify = False
-    if classify:
-        modelc = load_classifier(name='resnet101', n=2)  # initialize
-        modelc.load_state_dict(torch.load('weights/resnet101.pt', map_location=device)['model'])  # load weights
-        modelc.to(device).eval()
 
     # Set Dataloader
     vid_path, vid_writer = None, None
@@ -166,8 +155,8 @@ if __name__ == '__main__':
     parser.add_argument('--source', type=str, default='inference/images', help='source')  # file/folder, 0 for webcam
     parser.add_argument('--output', type=str, default='inference/output', help='output folder')  # output folder
     parser.add_argument('--img-size', type=int, default=640, help='inference size (pixels)')
-    parser.add_argument('--conf-thres', type=float, default=0.05, help='object confidence threshold')
-    parser.add_argument('--iou-thres', type=float, default=0.05, help='IOU threshold for NMS')
+    parser.add_argument('--conf-thres', type=float, default=0.2, help='object confidence threshold')
+    parser.add_argument('--iou-thres', type=float, default=0.2, help='IOU threshold for NMS')
     parser.add_argument('--device', default='', help='cuda device, i.e. 0 or 0,1,2,3 or cpu')
     parser.add_argument('--view-img', action='store_true', help='display results')
     parser.add_argument('--save-txt', action='store_true', help='save results to *.txt')
