@@ -47,6 +47,7 @@ def detect(save_img=False):
     if half:
         model.half()  # to FP16
 
+    classify = False
     # Set Dataloader
     vid_path, vid_writer = None, None
     if webcam:
